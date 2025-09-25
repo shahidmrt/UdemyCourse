@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 60.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+/* LAYOUT */
+
+header{
+    position: relative;
+    height: 35vh;
+    border-bottom: 5px solid #eee;
+}
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+.between{
+    position: absolute;
+    top: 10%;
+    right: 1px;
+    /* transform: translate(-50%, -50%); */
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    color: #ff8c09;
+}
+.btn_again{
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    /* transform: translate(-50%, -50%); */
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1.5rem;
+
+    &:hover {
+        background-color: #f1a9a9;
+        color: #222;
+        cursor: pointer;
+    }
+}
+.number{
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50% , 50%);
+    width: 10rem;
+    height: 10rem;
+    /* border-radius: 50%; */
+    border: 5px solid #eee;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 10rem;
+    background-color: #eee;
+    color: #222;
+}
+main{
+    position: relative;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #eee;
+}
+.left, .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+.guess{
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    width: 15rem;
+    
+}
+.guess::placeholder{
+    color: #222;
+    font-size: 1rem;
+}
+.btn_check{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    background-color: #f08103;
+    border-radius: 0.5rem;
+    border:1px solid rgb(236, 236, 252);
+
+    &:hover {
+        background-color: #f89a1e;
+        color: #fdf8f8;
+        cursor: pointer;
+        border: 1px solid #fa9005;
+    }
+}
+
+
+
+
+
+

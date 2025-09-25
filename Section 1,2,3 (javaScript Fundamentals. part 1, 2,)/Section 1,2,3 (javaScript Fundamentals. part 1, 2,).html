@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01VideojavaScript</title>
+</head>
+
+<body>
+    <p>check console Window</p>
+
+</body>
+<script>
+    // The Complete java Script course 2025: from zero to expert
+
+    ///////////////// VideoNo11: Data Types //////////////////////
+
+    /* //THE 7 PRIMITIVE DATA TYPES
+     1: NUMBER: Floating point numbers 👉 Used for decimal and integers e.g let age= 23;
+     2: String: Sequence of characters 👉 Used for Text e.g let name= 'shahid';
+     3: String: Sequence of characters 👉 Used for Text e.g let name= 'shahid';
+     4: Undefined: Value taken by a variable that is not yet defined('empty value') let age;
+     5: Null: Also means 'empty Value';
+     6: symbol(ES2015): Value that is unique and cannot be changed [Not useful for now];
+     7: BigInt: Larger integers than the number type can be hold;
+     */
+
+    // let javaScriptisFun = true;
+    // console.log(javaScriptisFun)
+    // console.log(typeof true)
+    // console.log(typeof(javaScriptisFun))
+    // console.log(typeof 24)
+    // console.log(typeof shahid)
+    // console.log(typeof 'shahid');
+    // javaScriptisFun = 'yes!';
+    // console.log(typeof(javaScriptisFun))
+    // let year;
+    // console.log(typeof(year))
+    // year = 1997;
+    // console.log(typeof(year))
+    // console.log(typeof null)
+
+
+
+    ///////////////// VideoNo12: let const and var   //////////////////////
+
+    // let age = 27; /// let is block scop
+    // age= 30;
+    // console.log('age',age)
+
+    // const birthYear= 1997;
+    // // birthYear = 2000;
+    // console.log(birthYear)
+    // // const job; // aisa bi nhi lik skty .const initialize kraingy tu value bi daingy.
+
+    // var job= 'programmer'; /// var is  function scop
+    // job = 'teacher';
+
+    // lastName = 'sajjadAlam';
+    // console.log(lastName)
+
+
+    ///////////////// VideoNo13: Basic Operators   //////////////////////
+
+    // const now= 2037;
+    // // const ageJonas = 2037 - 1991;
+    // const ageJonas = now - 1991;
+    // // const ageSarah =  2037 - 2018;
+    // const ageSarah =  now - 2020;
+    // console.log(ageJonas, ageSarah)
+
+    // console.log(ageJonas * 2 ,ageJonas/10, 2 ** 3)
+    // // 2**3 mean 2 to the power of 3 = 2*2*2
+
+    // const firstName= 'jonas';
+    // const lastName= 'Schedtman'
+    // console.log(firstName + ' ' + lastName)
+
+    // // Assignment Operators
+    // let x = 10 + 5; //15
+    // console.log(x) ;
+    // x += 10;  // x= x+ 15= 25;
+    // console.log(x) ;
+    // x *= 4;  // x= x * 25= 100;
+    // console.log(x) ;
+    // x++;
+    // console.log(x);
+    // x--;
+    // console.log(x);
+    // x--;
+    // console.log(x);
+
+    //Comparison Operators
+    // > , < , >= , <= 
+    // console.log(ageJonas > ageSarah)
+    // console.log(ageSarah >= 18)
+    // const isFullage= ageSarah >= 18;
+    // console.log(isFullage)
+
+    // // the question in js. the js first solve math   or first solve comparison 
+    // // first solve math 
+
+    // console.log(now - 1991 >  now - 2020) // here solve the question left to right
+
+
+    ///////////////// VideoNo14: Operator precedence    //////////////////////
+
+    // search MDN operators precendence  . MDN (mozila development network)
+    // const now= 2037;
+    // const ageJonas = now - 1991;
+    // const ageSarah =  now - 2018;
+
+    // console.log(now - 1991 >  now - 2020) // here solve the question left to right
+    // console.log(20-5-8) //  left to right  solve huta hai
+    // let x, y;
+    // x = y = 20-5-8;
+    // console.log('x',x,'y',y)
+    // let z= 5;
+    // x = z = 20-5-8;
+    // console.log('x=',x,'z=',z)
+
+    // const averageAge1= ageJonas + ageSarah / 2;
+    // const averageAge= (ageJonas + ageSarah) / 2;
+    // console.log('averageAge',ageJonas, ageSarah, averageAge ,averageAge1)
+
+    ///////////////// VideoNo16: CHALLENGE#1 : SOLUTION   //////////////////////
+
+    /* QUESTIONS:-
+    1. Store Mark's and John's mass and height in variables.
+    2. Calculate both their BMIs using the formula (you can even implement both version)
+    3. Create a boolean variable 'markHigherBMI' containing  information about whether Mark has a higher BMI than John.
+       TEST DATA 1: Marks weights 78 kg and is 1.69 m tall . John weights 92 kg and is 1.95 m tall.
+       TEST DATA 2: Marks weights 95 kg and is 1.88 m tall John weights 85 kg and is 1.76 m tall.
+        ANSWERS:-
+    */
+
+    // ///// test data 1: 
+    // const massMark = 78;
+    // const heightMark = 1.69;
+    // const massJohn = 92;
+    // const heightJohn= 1.95;
+
+
+    // ///// test data 2: 
+    // const massMark = 95;
+    // const heightMark = 1.88;
+    // const massJohn = 85;
+    // const heightJohn= 1.76;
+
+    // const BMIMark = massMark / heightMark ** 2;
+    // const BMIMark2 = massMark / (heightMark * heightMark);
+    // // console.log(BMIMark, BMIMark2)
+    // const BMIJohn = massJohn / (heightJohn * heightJohn);
+    // console.log(BMIMark, BMIJohn )
+    // const markHeigherBMI= BMIMark > BMIJohn;
+    // console.log(BMIMark, BMIJohn, markHeigherBMI )
+
+
+    ///////////////// VideoNo17: STRING AND TEMPLATE LITERALS   //////////////////////
+
+    // const firstName = 'jonas';
+    // const job = 'teacher';
+    // const birthYear = 1991;
+    // const year = 2037;
+
+    // const jonas = "i'm "+ firstName + ', a '+ (year - birthYear) + ' years old ' + job + '!';
+    // console.log(jonas);
+
+    // const jonasNew= `i'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+    // console.log(jonasNew)
+    // console.log(`String with \n\ multiple \n\ lines`)
+    // console.log(`String with
+    // multiple
+    // lines`)
+
+    ///////////////// VideoNo18: TAKING DECISIONS: IF / ELSE STATMENTS   //////////////////////
+
+    // const age = 19;
+    // const isOldEnough= age >= 18;
+
+    // if (isOldEnough) {
+    //     console.log('Sarah can start driving license 🚗')
+    // }
+
+    // // if else statment ko CONTROL STRUCTURE BI KEHTY HAI 
+    // const Employee_age = 15;
+    // if (Employee_age >= 18 ) {
+    //     console.log('Employee can start driving license 🚗')
+    // } else {
+    //     const yearLeft= 18 -Employee_age;
+    //     console.log(`Employee is too young. wait anther ${yearLeft} yaer's :)`)
+
+    // }
+
+
+    // const birthYear = 1998;
+    // let century;
+
+    // if (birthYear <= 2000) {
+    //     century= 20;
+    // } else {
+    //     century = 21
+    // }
+
+    // console.log(century)
+
+    ///////////////// VideoNo19: CHALLENGE#2 : SOLUTION   //////////////////////
+
+    /* 
+    Use the BMI example from challenge #1, and the code you already wrote , and improve it:
+
+    1. Print a nice output to the console, saying who has the heigher BMI. the message can be either "Mark's BMI 
+    IS HIGHER TAHN John's!" or "john's BMI as higher than Mark's! "
+    2. Use a template Literals to include the BMI values in the outputs. Example: "mark's BMI (28.3) is higher than John's (23.9)!"
+    HINT: use an if/else statment 🤔
+    
+    */
+    ///// test data 1: 
+    // const massMark = 78;
+    // const heightMark = 1.69;
+    // const massJohn = 92;
+    // const heightJohn= 1.95;
+
+
+    // /// test data 2: 
+    // const massMark = 95;
+    // const heightMark = 1.88;
+    // const massJohn = 85;
+    // const heightJohn= 1.76;
+
+    // const BMIMark = massMark / heightMark ** 2;
+    // const BMIJohn = massJohn / (heightJohn * heightJohn);
+    // console.log(BMIMark, '' , BMIJohn)
+
+    // if (BMIMark > BMIJohn) {
+    //     console.log(`Mark's BMI (${BMIMark}) IS HIGHER TAHN John's! (${BMIJohn})`)
+    // } else{
+    //     console.log(`john's BMI (${BMIJohn}) as higher than Mark's! (${BMIMark}) `)
+    // }
+
+    ///////////////// VideoNo20: TYPE CONVERSION AND COERCION   //////////////////////
+
+    // TYPE CONVERSION : TYPE CONVERSION IS MANUALLY CONVERT FROM ONE TYPE TO ANOTHER TYPE. 
+    // TYPE COERCION : TYPE COERCION IS WHEN JAVASCRIPT AUTOMATICALLY CONVERTS TYPES BEHIND THE SCENES FOR US.
+
+    //// type conversion
+    // const inputYear = '1991';
+    // console.log(inputYear + 28);
+    // console.log(Number(inputYear), inputYear);
+    // console.log(Number(inputYear) + 28);
+
+    // console.log(Number('shahid')) // Nan: Not A Number
+    // console.log(typeof NaN) // maens invalid number;
+
+    // console.log(String(23), 23)
+
+    // //// type coercion
+    // console.log('i am '+ 23 + ' years old'); // automaticlly convert to string
+    // console.log('i am '+ String(23) + ' years old');
+    // console.log('i am '+ '23' + ' years old');
+    // console.log(String(23) - '10' - 3) // automaticlly convert to Number
+    // console.log('23' - '10' - 3) // automaticlly convert to Number
+    // console.log('23' + '10' + 3) // not  covert
+    // console.log('4' * '3') // automaticlly convert to Number
+    // console.log('18' / '3') // automaticlly convert to Number
+    // let n= '1' + 1;
+    // console.log('n = ',n)
+    // n= n-1;
+    // console.log('n = ',n)
+
+    // let m= 2 + 3 + 4 + '5'; // 2+3=5, 5+4=9, 9+'5' = 95
+    // console.log('m = ',m)
+
+    // let z = '10' - '4' - '3' - 2 + '5'; // 10-4=6, 6-3=3, 3-2=1, 1+'5'= 15
+    // console.log('z = ',z)
+    // console.log('typeOf z = ',typeof z)
+
+
+    ///////////////// VideoNo21: TRUTHY AND FALSY VALUES   //////////////////////
+
+    // // 5 falsy values: 0, '', undefined, null, NaN
+    // console.log(Boolean(0)) // false
+    // console.log(Boolean(undefined)) // false
+    // console.log(Boolean('shahid')) // true
+    // console.log(Boolean('')) // false
+    // console.log(Boolean({})) // true
+    // console.log(Boolean()) // false
+
+    // // const money = 0; // 0 is falsy value
+    // const money = 100; // 100 is truthy value
+    // if (money){
+    //     console.log('dont spend it all ;')
+    // } else {
+    //     console.log('you should get a job!')
+    // }
+
+    // // let height; // undefined is falsy value
+    // //  height = 0; // 0 is falsy value
+    // height = 1; // 1 is truthy value
+    // if (height) {
+    //     console.log('YAY! height is defined')
+    // } else {
+    //     console.log('height is UNDEFINED')
+    // }
+
+    ///////////////// VideoNo22: EQUALITY OPERATORS: == VS ===    //////////////////////
+
+    // const age = 18 ;
+    // if (age === 18) console.log('you just became an adult :D'); //condition true. === strict equality operator.
+    // if (age == 18) console.log('you just became an adult :D'); //condition true. == loose equality operator.
+
+    // if (age === "18") { // === check the type and value both. //condition false.
+    //     console.log('you just became an adult :D');
+    // } else{
+    //     console.log('you are not an adult :D')
+    // }
+
+    // if (age == "18") { // condition true
+    //     console.log('you just became an adult :D');
+    // } else{
+    //     console.log('you are not an adult :D')
+    // }
+
+    // 18 is a number and '18' is a string. so === check the type and value both.
+    // == check only the value. so it will convert the string to number and then check.
+    // so == is not recommended to use.
+
+    // const favourite = prompt('what is your favourite number?');
+
+    //     console.log(favourite);
+    //     console.log(typeof favourite); // string
+
+    //     if (favourite == 23) { // '23' == 23 // condition true
+    //         console.log('Cool! 23 is an amazing number!');
+    //     } else {
+    //         console.log('number is not 23!');
+    //     }
+
+
+    // const favourite = prompt('what is your favourite number?');// this prompt gives string value.
+
+    // const favourite = Number(prompt('what is your favourite number?')); // this prompt gives number value.
+    //     console.log(favourite);
+    //     console.log(typeof favourite); // number 
+
+    // if(favourite === 23) { // '23' === 23 // condition false // 23 === 23 // condition true
+    //     console.log('Cool! 23 is an amazing number!');
+    // } else if (favourite === 7) {
+    //     console.log('7 is also a cool number!')
+    // } else if (favourite === 9) {
+    //     console.log('9 is also a cool number!')
+    // } else {
+    //     console.log('number is not 23 or 7 or 9!');
+    // }
+
+    // // if (favourite != 23) { // loose condition //  "23" != 23 // condition false
+    // if (favourite !== 23) { // strict condition  // '23' !== 23 // condition true
+    //     console.log('why not 23?')
+    // } else {
+    //     console.log('23 is a cool number!')
+    // }
+
+
+    ///////////////// VideoNo23:  BOOLEAN LOGIC   //////////////////////
+
+    // BASIC BOOLEAN LOGIC:
+    // AND: &&  (true if both are true)
+    // OR:  ||  (true if at least one is true)
+    // NOT: !  (true if false)
+
+    ///////////////// VideoNo24:  LOGICAL OPERATORS   //////////////////////
+
+    //  const hasDriverslicense = true;
+    //  const hasGoodVisionSarah = true;
+    //     const hasGoodVision = false; // false
+
+
+    //  console.log(hasDriverslicense && hasGoodVisionSarah);
+    //  console.log(hasDriverslicense && hasGoodVision);
+    //     console.log(hasDriverslicense || hasGoodVision);
+
+    //     const shouldDriveSarah = hasDriverslicense && hasGoodVisionSarah; // true && true = true
+    //     if (shouldDriveSarah) {
+    //         console.log('Sarah is able to drive!')
+    //     } else {
+    //         console.log('Someone else should drive!')
+    //     };
+
+
+    //     const shouldDrive = hasDriverslicense && hasGoodVision; // true && false = false
+    //     if (shouldDrive) {
+    //         console.log('Sarah is able to drive!')
+    //     } else {
+    //         console.log('Someone else should drive!')
+    //     };
+
+    //     const isTired = true;
+    //     console.log(hasDriverslicense && hasGoodVision && isTired); // true && false && true = false  ;
+    //     console.log(hasDriverslicense || hasGoodVision || isTired); // true || false || true = true  ;
+    //     console.log(!hasDriverslicense); // false
+
+    //     // if (hasDriverslicense && hasGoodVisionSarah && isTired) { // true && true && true = true
+    //     if (hasDriverslicense && hasGoodVisionSarah && !isTired) { // true && true && false = false
+    //         console.log('Sarah is able to drive!')
+    //     } else {
+    //         console.log('Someone else should drive!')
+    //     };
+
+
+    ///////////////// VideoNo25:  CHALLENGE#3 : SOLUTION   //////////////////////
+
+    // 1. Calculate the average score for each team, using the test data below
+    // 2. Compare the team's average scores to determine the winner of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score).
+    // 3. BONUS 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks
+    // 4. BONUS 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy.
+    // TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+    // TEST DATA BONUS 1: Dolphins score 97, 112 and 101.  Koalas score 109, 95 and 123
+    // TEST DATA BONUS 2: Dolphins opins score 97, 112 and 101.  Koalas score 109, 95 and 106
+
+
+    // let scoreDolphines = (96 + 108 + 89) / 3; // 97.67)
+    // let scoreKoalas = (88 + 91 + 110) / 3; // 96.33
+    // console.log(scoreDolphines, scoreKoalas)
+
+
+
+
+    // if (scoreDolphines > scoreKoalas) {
+    //     console.log('dolphines win the trophy! 🏆')
+    // } else if (scoreKoalas > scoreDolphines) {
+    //     console.log('koalas win the trophy! 🏆')
+    // } else if (scoreDolphines === scoreKoalas) {
+    //     console.log('both win the trophy! 🏆')
+    // } else {
+    //     console.log('no one win the trophy! 🏆')
+    // }
+
+    //// Bonus 1
+    // scoreDolphines = (97 + 112 + 101) / 3; // 103.33
+    // scoreKoalas = (109 + 95 + 123) / 3; // 109.00
+    // console.log(scoreDolphines, scoreKoalas)
+
+    // if (scoreDolphines > scoreKoalas) {
+    //     console.log('dolphines win the trophy! 🏆')
+    // } else if (scoreKoalas > scoreDolphines) {
+    //     console.log('koalas win the trophy! 🏆')
+    // } else if (scoreDolphines === scoreKoalas) {
+    //     console.log('both win the trophy! 🏆')
+    // } else {
+    //     console.log('no one win the trophy! 😥')
+    // }
+
+    // if (scoreDolphines >= 100 && scoreDolphines > scoreKoalas) {
+    //     console.log('dolphinesssssss win the trophy! 🏆')
+    // } else if (scoreKoalas >= 100 && scoreKoalas > scoreDolphines) {
+    //     console.log('koalassssss win the trophy! 🏆')
+    // } else if (scoreDolphines === scoreKoalas && scoreDolphines >= 100 && scoreKoalas >= 100) {
+    //     console.log('bothhhhh win the trophy! 🏆')
+    // } else {
+    //     console.log('no one win the trophy! 😥')
+    // }
+
+    ///// Bonus 2
+    // scoreDolphines = (97 + 112 + 101) / 3; // 103.33
+    // scoreKoalas = (109 + 95 + 106) / 3; // 103.33
+    // console.log(scoreDolphines, scoreKoalas)
+
+    // if (scoreDolphines > scoreKoalas) {
+    //     console.log('dolphines win the trophy! 🏆')
+    // } else if (scoreKoalas > scoreDolphines) {
+    //     console.log('koalas win the trophy! 🏆')
+    // } else if (scoreDolphines === scoreKoalas) {
+    //     console.log('both win the trophy! 🏆')
+    // } else {
+    //     console.log('no one win the trophy! 😥')
+    // };
+
+
+    // if (scoreDolphines >= 100 && scoreDolphines > scoreKoalas) {
+    //     console.log('dolphinesssssss win the trophy! 🏆')
+    // } else if (scoreKoalas >= 100 && scoreKoalas > scoreDolphines) {
+    //     console.log('koalassssss win the trophy! 🏆')
+    // } else if (scoreDolphines === scoreKoalas && scoreDolphines >= 100 && scoreKoalas >= 100) {
+    //     console.log('bothhhhh win the trophy! 🏆')
+    // } else {
+    //     console.log('no one win the trophy!😥 ')
+    // };
+
+
+    ///////////////// VideoNo26: THE SWITCH STATEMENT   //////////////////////
+
+    // const day = 'wednesday';
+    // switch (day) {
+    //     case 'monday':
+    //         console.log('plan course strcture');
+    //         console.log('go to coding meetup');
+    //         // break;   // break is used to stop the execution of the switch statement. if not used, it will execute all the cases below it.
+    //     case 'tuesday':
+    //         console.log('Prepare theory videos');
+    //         break;
+    //     case 'wednesday':
+    //     case 'thursday':
+    //         console.log('write code examples');
+    //         break;
+    //     case 'friday':
+    //         console.log('record videos');
+    //         break;
+    //     case 'saturday':
+    //         console.log('enjoy the weekend');
+    //         break;
+    //     case 'sunday':
+    //         console.log('enjoy the weekend');
+    //         break;
+    //         default:
+    //             console.log('not a valid day!');
+    // }
+
+
+    // if (day === 'monday') {
+    //     console.log('plan course strcture');     
+    //     console.log('go to coding meetup');          
+    // } else if (day === 'tuesday') {
+    //     console.log('Prepare theory videos');
+    // } else if (day === 'wednesday' || day === 'thursday') {
+    //     console.log('write code examples');
+    // } else if (day === 'friday') {
+    //     console.log('enjoy the weekend');
+    // } else if (day === 'saturday') {
+    //     console.log('enjoy the weekend');
+    // } else if (day === 'sunday') {
+    //     console.log('enjoy the weekend');
+    // } else {
+    //     console.log('not a valid day!');
+    // }
+
+
+    ///////////////// VideoNo27: STATMENTS AND EXPRESSIONS   //////////////////////
+
+    // EXPRESSION: A piece of code that produces a value. e.g 3 + 4, 1991, true, 'shahid', undefined, null, {name: 'shahid'}, [1,2,3], function(){}.
+    // STATEMENT: A piece of code that does something. e.g if, switch, for, while, function, return, break, continue, try, catch, throw.
+
+    //  3 + 4; // EXPRESSION
+    //  1991; // EXPRESSION
+    //  ture && false && !false // expression
+    //     'shahid'; // EXPRESSION
+    //     undefined; // EXPRESSION
+    //     null; // EXPRESSION
+    //     {name: 'shahid'}; // EXPRESSION
+    //     [1,2,3]; // EXPRESSION
+    //     function(){}; // EXPRESSION
+
+    //     if (23 > 10) { // STATEMENT
+    //         const str = '23 is bigger'; // STATEMENT
+    //         console.log(str); // STATEMENT
+    //     } else {
+    //         console.log('23 is smaller'); // STATEMENT
+    //     }
+
+    // if (23 > 10) {
+    //     const strx= '23 is bigger';
+    // }
+
+    // const me = 'shahid';
+    // // console.log(`i'm ${2025 - 1997} years old ${if (23 > 10) {
+    // //     const strx= '23 is bigger';
+    // // }}`) // this is not valid syntax. because if is a statement and cannot be used in a template literal.
+    // // console.log(`i'm ${2025 - 1997} years old ${if (23 > 10) `)
+
+
+    // console.log(`i'm ${2025 - 1997} years old ${me}`) // this is valid syntax. because me is a variable and can be used in a template literal.
+
+
+    ///////////////// VideoNo28: THE CONDITIONAL (TERNARY) OPERATOR   //////////////////////
+
+    // let  age = 23;
+    // // age = 15;
+    // // age >= 18 ? console.log('i like to drink wine 🍷'): console.log('i like to drink water 💧')
+
+
+    // const drink = age >= 18 ? 'wwine 🍷' : 'water 💧';
+    // console.log(drink)
+
+    // let drink2;
+    // if (age >= 18) {
+    //   drink2 = 'wine 🍷';  
+    // } else {
+    //     drink2 ='wwater 💧';
+    // }
+    // console.log('drink2',drink2)
+
+    // console.log(`i like to drink ${age >= 18 ? 'wine': 'water'}`);
+
+
+    ///////////////// VideoNo29:  CHALLENGE#4 : SOLUTION   //////////////////////
+
+    /*
+    Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant.
+     In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+    1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this.
+     It's not allowed to use an if/else statement (If it's easier for you, you can start with an if/else statement,
+      and then try to convert it to a ternary operator!)
+    2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
+    Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+    TEST DATA: Test for bill values 275, 40 and 430
+    HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+    HINT: Value X is between 50 and 300, if it's >= 50 && <<=300
+    GOOD LUCK
+    */
+
+    //  const bill = 275;
+    //  const tip = bill >= 50 && bill <= 300 ? bill * 0.15 / 100 : bill *20 / 100;
+    //  const total = bill + tip;
+    //   console.log(`the bill was ${bill}, the tip was ${tip}, and the total value ${total}`)
+
+
+    ///////////////// VideoNo30:  JAVASCRIPT RELEASES : ES5, ES6+, ESNEXT .   //////////////////////
+    ///////////////// VideoNo31:  SECTION SUMMARY PDF   //////////////////////
+    ///////////////// VideoNo32:  SECTION INTRODUCTION   //////////////////////
+    ///////////////// VideoNo33:  ACTIVATING STRICT MODE   //////////////////////
+
+
+    'use strict';
+
+    //  let hasDriverslicense = false;
+    //  const passTest=  true;
+    // //  if (passTest) hasDriverlicense = true // 
+    //  if (passTest) hasDriverslicense = true // 
+    //  if (hasDriverslicense) console.log('I can drive :D')
+
+    // //  const interface : 'Audio';
+    // // const if = 25;
+
+
+
+    ////////////////// VideoNo34: FUNCTIONS functionc Declaration  /////////////////////////////
+
+    // function logger (){
+    //     console.log('my name is Shahidullah')
+    // }
+
+    // //// Calling / running / invoking Fucntion
+    // logger();
+
+    // function fruitProcessor(apples, oranges){
+    //     console.log(apples, oranges)
+    //     // const appleJuice = 'Apple Juice';
+    //     // return appleJuice;
+    //     const juice =`Juice with ${apples} apples and ${oranges} oranges`;
+    //     return juice
+    // }
+
+    // const appleJuice =fruitProcessor(5, 0);
+    // console.log(appleJuice)
+
+    // //  const appleOrangeJuice =fruitProcessor();
+    //  const appleOrangeJuice =fruitProcessor( 2, 4);
+    // console.log(appleOrangeJuice)
+
+
+
+    ////////////////// VideoNo35: FUNCTION Declaration vs Expressions     /////////////////////////////
+
+    // 1. Function Declaration 
+    // const age1 = calcAge1(1991) ; // work Acces before function declaration 
+    // function calcAge1(birthYear){
+    //     return 2037 - birthYear; 
+    // }
+    // // const age1 = calcAge1(1991);
+    // console.log(age1)
+
+    // // 2. Function Expression
+    // // const age2 = calcAge2(1997) ;  // not work if call function before initialization
+    // const calcAge2 = function (birthYear){  // this function is called anonymous Function
+    //     return 2025 - birthYear
+    // } 
+
+    // const age2 = calcAge2(1997);
+
+    // console.log(age1, age2)
+
+    ////////////////// VideoNo36:  ARROW FUNCTION     /////////////////////////////
+
+    // Function Expression
+    // const calcAge2 = function (birthYear){  // this function is called anonymous Function
+    //     return 2025 - birthYear
+    // }
+
+    // // Arrow Function 
+    // const calcAge3 = birthYear => 2025 - birthYear; // this is called arrow function
+    // const age3 = calcAge3(1997);
+    // console.log('age3', age3)
+    // const age2 = calcAge2(1999);
+    // console.log('age2', age2);
+
+    // // const yearUntilRetirement = birthYear => {
+    // //     const age = 2025 - birthYear;
+    // //     const retirement = 65 - age;
+    // //     return retirement;
+    // // };
+    // // console.log(yearUntilRetirement(1998));
+    // // console.log(yearUntilRetirement(1999));
+    // // console.log(yearUntilRetirement(2000));
+
+
+    // const yearUntilRetirement = (birthYear, firstName) => {
+    //     const age = 2025 - birthYear;
+    //     const retirement = 65 - age;
+    //     return `${firstName} retires in ${retirement} years`;
+    // };
+    // console.log(yearUntilRetirement(1998, 'Shahidullah'));
+    // console.log(yearUntilRetirement(1999, 'Shahidullah'));
+    // console.log(yearUntilRetirement(2000, 'Shahidullah'));
+
+
+
+
+    ////////////////// VideoNo37:  FUNCTIONS CALLING OTHER FUNCTIONS   /////////////////////////////
+
+    // function cutFruitPieces(fruit){
+    //     return fruit * 4 ;
+    // }
+
+    // function fruitProcessor(apples, oranges){
+    //     const applePieces = cutFruitPieces(apples);
+    //     const orangePieces = cutFruitPieces(oranges);
+    //     // const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+    //     const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
+    //     return juice;
+    // }
+
+    // fruitProcessor(2, 3);
+    // console.log(fruitProcessor(2, 3));
+
+
+
+    ////////////////// VideoNo38:  REVIEWING FUNCTIONS   /////////////////////////////
+
+    // const calcAge = function (birthYear){
+    //     return 2025 - birthYear;
+    // }
+
+    // const yearsUntilRetirement = function (birthYear, firstName) {
+
+    //     const age = calcAge(birthYear);
+    //     const retirement = 65 - age;
+
+    //     if (retirement > 0) {
+    //         console.log(` ${firstName} retires in ${retirement} years`)
+    //         return retirement;
+    //     } else {
+    //         console.log(`${firstName} has already retired!`)
+    //         return -1;
+    //     }
+
+    //     // return ` ${firstName} retires in ${retirement} years`;
+    // }
+    // console.log(yearsUntilRetirement(1998, 'shahidullah'));
+    // console.log(yearsUntilRetirement(1950, 'sajjad'));
+
+    // function calcAge2( birthYear, firstName){
+    //     const age = 2025 - birthYear;
+    //     console.log(`${firstName} is ${age} years old`)
+    //     return age;
+
+    // }
+    // calcAge2(1998, 'shahidullah'); 
+    // console.log(calcAge2(1998, 'shahidullah'));
+
+
+    ////////////////// VideoNo39:  CHALLENGE#5  /////////////////////////////
+    /* 
+    There are two gymnastics teams, the Dolphins and the Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+    Your tasks:
+    
+    Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
+    Each team competes 3 times, and then the average of the 3 scores is calculated (so one average score per team).
+    A team ONLY wins if it has at least DOUBLE the average score of the other team. Otherwise, no team wins!
+    Your tasks:
+    1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+    2. Use the function 'calcAverage' to calculate the average for both teams
+    3. Create a function 'checkWinner' that takes the average score of each team as parameters ('avgDolphins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)".
+    4. Use the 'checkWinner' function to determine the winner for both Data 1 and Data 2.
+    5. Ignore draws this time.
+    TEST DATA 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+    TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+    HINT: To calculate the average of 3 values, add them all together and divide by 3
+    HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores.
+    ANSWERS:-
+
+    */
+
+    //    const calcAverage = (a, b, c) =>  (a + b + c) / 3;
+    //    console.log(calcAverage(3, 4, 5));
+
+    //    /// TEST DATA 1
+    //     const scoreDolphins = calcAverage(44, 23, 71);
+    //     const scoreKoalas = calcAverage(65, 54, 49);
+    //     console.log(scoreDolphins, scoreKoalas);
+
+    //     const checkWinner = function (avgDolphins, avgKoalas) {
+    //         if (avgDolphins >= 2 * avgKoalas) {
+    //             console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
+    //         } else if (avgKoalas >= 2 * avgDolphins) { // 
+    //             console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`)
+    //         } else {
+    //             console.log(`No team wins...`);
+    //         }
+    //     }
+    //     checkWinner(scoreDolphins, scoreKoalas);
+    //     checkWinner(756, 111);
+    //     checkWinner(111, 111);
+    //     checkWinner(5, 10);
+
+    //     /// TEST DATA 2
+    //     const scoreDolphins2 = calcAverage(85, 54, 41);
+    //     const scoreKoalas2 = calcAverage(23, 34, 27);
+    //     console.log(scoreDolphins2, scoreKoalas2);
+    //     checkWinner(scoreDolphins2, scoreKoalas2);
+
+    ////////////////// VideoNo40:  INTRODUCTION TO ARRAYS   /////////////////////////////
+
+    // ARRAYS: Arrays are used to store multiple values in a single variable.
+
+    // const friend1 = 'Shahidullah';
+    // const friend2 = 'Sajjad';
+    // const friend3 = 'Sajjadullah';
+
+    // const friends = ['shahidullah', 'sajjad', 'ikram'];
+    // console.log(friends);
+
+    // const years = new Array(1991, 1984, 2007,2020);
+    // console.log(years);
+
+    // console.log(friends[0]);
+    // console.log(friends[2]);
+    // console.log(friends.length);
+    // console.log(friends[friends.length - 1]);
+    // friends[1] = 'Mubashar';
+    // console.log(friends);
+
+    // friends = ['tahir', 'wahab']; // we cannot reassign the array variable, but we can change the elements of the array.
+    // console.log(friends);
+
+    // const firstName = 'Riaz';
+    // const riaz = [firstName, 'khan', 2025 -1998, 'web developer', friends, true, ];
+    // console.log(riaz);
+    // console.log(riaz.length);
+    // console.log(riaz[riaz.length - 1]); // last element of the array
+    // console.log(riaz[4][0]); // accessing the first element of the friends array
+
+    // const calcAge = function (birthYear){
+    //     return 2025 - birthYear;
+    // }
+
+    // const years2 = [1990, 1997, 1998, 1999, 2005];
+
+    // console.log(years2);
+    // console.log(calcAge(years2[0])); // calling the function with the first
+    // console.log(calcAge(years2))
+    // const age1 = calcAge(years2[0]);
+    // const age2 = calcAge(years2[1]);
+    // const age3 = calcAge(years2[2]);
+    // console.log(age1, age2, age3);
+    // const ages = [calcAge(years2[0]), calcAge(years2[1]), calcAge(years2[2])];
+    // console.log(ages);
+
+
+    ////////////////// VideoNo41:  BASIC ARRAY OPERATIONS (METHODS)   /////////////////////////////
+
+    //  const friends = ['shahidullah', 'sajjad', 'ikram'];
+    //  console.log(friends);
+    //  const newGroup = friends.push('wahab');
+    //  console.log(friends);
+    //  console.log(newGroup); // push method returns the new length of the array
+
+    //  friends.push('tahir'); // push method adds a new element to the end of the array
+    //  console.log(friends); // ['shahidullah', 'sajjad', 'ik
+    // //  console.log(friends.length); // length of the array after push method
+
+    //  const newGroupAgain = friends.unshift('Sajjad');
+    //  console.log(newGroupAgain);
+    //  console.log(friends);
+
+    //  friends.unshift('Habib'); // unshift method adds a new element to the beginning of the array
+    //  console.log(friends);
+
+    //  const popped = friends.pop();
+    //     console.log(popped); // pop method removes the last element of the array and returns it
+    //     console.log(friends); // ['shahidullah', 'sajjad', 'ikram', 'wahab', 'tahir']
+
+    //    const shifted = friends.shift();
+    //    console.log(shifted);
+    //     console.log(friends); // ['sajjad', 'ikram', 'wahab', 'tahir']
+    //     console.log(friends.indexOf('ikram')); // indexOf method returns the index of the element in the array
+    //     console.log(friends.indexOf('shahidullah')); // -1 means element not found in the array
+    //     console.log(friends.includes('ikram')); // includes method returns true if the element is present in the array, otherwise false
+    //     console.log(friends.includes('wahidullah')); // false
+
+    //     friends.push(23); // we can add any type of element to the array
+    //     console.log(friends);
+    //     console.log(friends.includes('23')); // false because includes method does strict equality check
+    //     console.log(friends.includes(23)); // true because includes method does strict equality check
+
+    //     if (friends.includes('sajjad')){
+    //         console.log('sajjad is in the group');
+
+    //     }else {
+    //         console.log('sajjad is not in the group');
+    //     }
+
+
+
+    ////////////////// VideoNo42:  CHALLANGE#2    /////////////////////////////
+
+    /*
+    Steven is still building his tip calculator, using the same rules as before: 
+    Tip 15% of a bill value between 50 and 300, and if the value is different, the tip is 20%
+    Your tasks:
+    1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip,
+     calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to)
+    2. And now let's use arrays! So create an array 'bills' containing the test data below.
+    3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before
+    4. Bonus: Create an array 'total' containing the total values, so the bill + tip for each bill value.
+
+    TEST DATA: 125, 555 and 44
+    HINT: To calculate a value X% of a value Y, simply multiply it by X / 100 = Y * (X / 100)
+    HINT: Remember that an array needs a value in each position, and tha value can actually be the return 
+    value of a function! So you can just call a function as array  values(so don't store the tip values in
+     separate variables first, but directly in the array)
+    GOOD LUCK
+    */
+
+    //     const calcTip = function (bill) {
+    //         return bill >= 50 &&  bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+    //     }
+
+    //     const bills = [125, 555, 44];
+    //     const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+    //     console.log(tips); 
+
+    //    const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+    //    console.log(total);
+
+    ////////////////// VideoNo43:  INTRODUCTION TO OBJECTS   /////////////////////////////
+
+    //   OBJECT : OBJECT IS A DATA STRUCTURE THAT IS USED TO STORE KEY-VALUE PAIRS 
+
+    //  const shahid = {
+    //     firstName:'Shahidullah',
+    //     lastName: 'Khan',
+    //     age: 2025 -1997,
+    //     job: 'Web Developer',
+    //     friends: ['Sajjad', 'Zareen', 'Ikram'],
+    //     hasDriversLicense: true,
+    //  }
+    //  console.log(shahid)
+    //  console.log(shahid.firstName)
+    //  console.log(shahid['lastName'])
+    //  console.log(shahid.age)
+    //  console.log(shahid.job)
+    //  console.log(shahid.friends)
+    //  console.log(shahid.hasDriversLicense)
+
+
+
+    ////////////////// VideoNo44:  Dot VS Bracket Notation   /////////////////////////////
+
+    // const shahid = {
+    //     firstName:'Shahidullah',
+    //     lastName: 'Khan',
+    //     age: 2025 -1997,
+    //     job: 'Developer',
+    //     friends: ['Sajjad', 'Zareen', 'Ikram'],
+    //     hasDriversLicense: true,
+    //  }
+
+    //   console.log(shahid)
+
+    //   console.log(shahid.firstName) // Dot Notation
+    //   console.log(shahid['lastName']) // Bracket Notation
+
+
+    //   const nameKey = 'Name';
+    //   console.log(shahid['first' + nameKey])
+    //   console.log(shahid['last' + nameKey])
+
+    //   console.log(shahid.'last' + nameKey) // this is not valid syntax
+
+    // const interestedIn = prompt('What do you want to know about Shahid? Choose between firstName, lastName, age, job, friends');
+
+    // // console.log(interestedIn)
+    // // console.log(shahid.interestedIn) // undefined
+    // // console.log(shahid[interestedIn]) 
+
+    // if (shahid[interestedIn]) {
+    //     console.log(shahid[interestedIn])
+    // } else {
+    //     console.log('Wrong request! Choose between firstName, lastName, age, job, friends')
+    // }
+
+    // shahid.location = 'Islamabad';
+    // shahid['twitter'] = '@shahidullahkhan';
+    // console.log(shahid)
+
+    // //challenge
+    // // "shahid has 3 friends , and his best friends is Sajjad"
+
+    // console.log(shahid.firstName + " has " + shahid.friends.length + " Friends, and his best Friend is " + shahid.friends[0] + ".")
+    // console.log(`${shahid.firstName} has ${shahid.friends.length} Friends, and his best Friend is ${shahid.friends[0]} `)
+
+
+    ////////////////// VideoNo45:  Object Method   /////////////////////////////
+
+    // const shahid = {
+    //     firstName:'Shahidullah',
+    //     lastName: 'Khan',
+    //     birthYear:1997,
+    //     job: 'Web Developer',
+    //     friends: ['Sajjad', 'Zareen', 'Ikram'],
+    //     // hasDriversLicense: false,
+    //     hasDriversLicense: true,
+
+    //     // calcAge: function(birthYear){
+    //     //     return 2025 - birthYear;
+    //     // }
+
+    //      calcAge: function(){
+    //         // console.log(this);
+    //         // return 2025 - this.birthYear;
+    //         // return 2025 - shahid.birthYear;
+    //         this.age = 2025 - this.birthYear; // Add a new value in shahid object
+    //         return this.age;
+    //     },
+
+    //     getSummary : function(){
+    //         return `${this.firstName} is a ${this.age} year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+    //     }
+    // }
+
+    // // console.log(shahid.calcAge(1990)); // calling the method with the birthYear parameter
+    // // console.log(shahid['calcAge'](1997)); // calling the method with the birthYear parameter
+    // // console.log(shahid[calcAge(1997)]); // calling the method with the birthYear parameter
+
+    // console.log(shahid.calcAge())
+    // console.log(shahid.age)
+    // console.log(shahid.getSummary())
+
+    // // const calcAge = function(birthYear) {
+    // //     return 2025 - birthYear;
+    // // }
+
+    ////////////////// VideoNo46:  challenge#3    /////////////////////////////
+
+    /* 1. For each of them, Create aan object with properties for their full name , mass and height (Mark Miller and John Smith)
+       2. Create a 'calcBMI' method on each object to calculate the BMI  (the same method on both objects).
+          Store the BMI value to a property , and also return it from the method.
+       3. Log to the console who has the higher BMI, together with the full name and the respective BMI.
+          Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)".
+
+       TEST DATA: Marks weights 78 kg and is 1.69 m tall.
+                   John weights 92 kg and is 1.95 m tall.
+
+    */
+
+    //    const mark ={
+    //     fullName: 'Mark Miller',
+    //     mass: 78, // kg
+    //     height: 1.69, // meter
+    //     calcBMI: function(){
+    //         this.bmi = this.mass / this.height ** 2;
+    //         return this.bmi;
+    //     }
+    //    }
+
+    //    const john ={
+    //     fullName: 'John Smith',
+    //     mass: 92, // kg
+    //     height: 1.95, // meter
+    //     calcBMI: function(){
+    //         this.bmi = this.mass / this.height ** 2;
+    //         return this.bmi;
+    //     }    
+    //    }
+
+    //    mark.calcBMI();
+    //    console.log(mark.bmi);
+
+    //    john.calcBMI();
+    //    console.log(john.bmi);
+
+    //    if(mark.bmi > john.bmi){
+    //        console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi}).`);
+    //    }else{
+    //        console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi}).`);
+    //    }
+
+    ////////////////// VideoNo47:  Iteration:  THE for Loop    /////////////////////////////
+
+    // console.log('Lifting weights repetition 1 🏋️‍♂️');
+    // console.log('Lifting weights repetition 2 🏋️‍♂️');
+    // console.log('Lifting weights repetition 3 🏋️‍♂️');
+    // console.log('Lifting weights repetition 4 🏋️‍♂️');
+    // console.log('Lifting weights repetition 5 🏋️‍♂️');
+    // console.log('Lifting weights repetition 6 🏋️‍♂️');
+    // console.log('Lifting weights repetition 7 🏋️‍♂️');
+    // console.log('Lifting weights repetition 8 🏋️‍♂️');
+    // console.log('Lifting weights repetition 9 🏋️‍♂️');
+    // console.log('Lifting weights repetition 10 🏋️‍♂️');
+
+
+    // // for(let rep = 1 ; rep <= 10 ; rep = rep + 1){
+    // for(let rep = 1 ; rep <=10 ; rep++){
+    //     console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`); 
+    // }  
+
+
+    ////////////////// VideoNo48:  Looping Arrays: Breaking and Continuing  /////////////////////////////
+
+    //     const shahid = [
+    //         'shahid',
+    //         'khan',
+    //         2025 - 1990,
+    //         'developer',
+    //         true
+    //     ]
+
+    //     // console.log(shahid[0])
+    //     // console.log(shahid[1])
+    //     // console.log(shahid[2])
+    //     // console.log(shahid[3])
+    //     // console.log(shahid[4])
+
+    //     //   for( let i = 0; i < shahid.length ; i++){
+    //     //     console.log(shahid[i]);
+    //     //   }
+
+    //     const type = [];
+
+
+    //     for (let i = 0; i < shahid.length; i++) {
+    //         // console.log(shahid[i] , typeof shahid[i]);
+
+    //             // Filling types array
+    //         // type[i] = typeof shahid[i];
+    //         type.push(typeof shahid[i]); // <--- push : adds a new element at the end
+    //         //  type.unshift(typeof shahid[i]); // <--- unshift : adds a new element at the beginning
+
+    //     }
+
+    // console.log('typeArray:', type);
+
+    //     // const years = [1990, 1997, 1988, 1995, 2000];
+
+    //     //  const ages = [];
+
+    //     //  for (let i = 0; i < years.length; i++) {
+    //     //     ages.push(2025 - years[i]);
+    //     //  }
+
+    //     //   for(let i = 0; i < shahid.length; i++){
+    //     //     console.log(shahid[i], typeof shahid[i]);
+    //     //  }
+
+    //     //  console.log(ages)
+
+    //      // CONTINUE AND BREAK
+
+    //         console.log('--- CONTINUE ---')
+    //      for(let i = 0; i < shahid.length; i++){
+    //         if (typeof shahid[i] !== 'string') continue; // continue : skips the current iteration and moves to the next iteration
+    //         console.log(shahid[i], typeof shahid[i]);
+    //      }
+
+    //      console.log(' --- BREAK ---')
+    //      for( let i = 0; i < shahid.length; i++){
+    //         if (typeof shahid[i] !== 'string') break; // break : exits the loop
+    //         console.log(shahid[i], typeof shahid[i]);
+    //      }
+
+    ////////////////// VideoNo49:  LOOPING BACKGROUND AND LOOPS IN LOOPS  /////////////////////////////
+
+    //  For Loop: when you know the number of iterations . then we use a for loop.
+
+    // const shahid = [
+    //     'shahid',
+    //     'khan',
+    //     2025 - 1990,
+    //     'developer',
+    //     ['Sajjad', 'Zareen', 'Ikram'],
+    //     true
+    // ]
+
+    // // 0, 1, ..., 4
+    // // 4, 3, ..., 0
+
+    // for ( let i = shahid.length -1; i >= 0; i--){
+    //     console.log(i, shahid[i])
+    // }
+
+    // for (let exercise = 1; exercise < 4; exercise++){
+    //     console.log(`--- Starting  exercise ${exercise} ---`)
+
+    //     for( let rep = 1; rep < 6 ; rep++){
+    //         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+
+    //     }
+    // }
+
+    ////////////////// VideoNo50: The While Loop    /////////////////////////////
+
+    // while Loop: when you don't know the number of iterations. then we use a while loop.
+
+    // let rep = 1;
+    // while (rep <= 7) {
+    //     console.log(`Lifting wights repetition ${rep} 🏋️‍♂️`);
+    //     rep++;
+    // }
+
+    // let dice = Math.trunc(Math.random() * 6) + 1;
+    // // console.log(dice);
+
+    // while (dice !== 6) {
+    //     console.log(`You rolled a ${dice}`)
+    //     dice = Math.trunc(Math.random() * 6) + 1;
+    //     if(dice === 6) console.log('Loop is about to end')
+    // }
+
+
+    ////////////////// VideoNo51: CHALANGE #4: VIDEO SOLUTION   /////////////////////////////
+
+
+       /* 1. Create an array called 'bills' that contains the test data 
+          2. Create empty Arrays fot the tips and the totals ('tips' and 'totals')
+          3. Use the calcTip function we wrote before (no need to repeat) to calculate tips and total values (bill + tip) for every bill value in the bills array. 
+             Use a for loop to perform the 10 calculations!
+ 
+          TEST DATA: 22, 295 , 176, 440, 37, 105, 10, 1100, 86 and 52
+
+          HINT: Call calcTip in the loop and use the push method to add values to the tips and totals arrays.
+
+        4. BONUS: write a function 'calcAverage' which takes an array called 'arr' as an argument.
+           This function calculates the average of all numbers in the given array. 
+           This is a difficult challenge (we haven't done this before)! Here is how to solve it:
+           4.1. First, you will need to add up all values in the array. To do the addition, start by creating a variable 'sum' that starts at 0.
+           Then loop over the array using a for loop. In each iteration, add the current value to the 'sum' variable. 
+           This way, by the end of the loop, you have all values added together
+           4.2. To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements)
+           4.3. Call the function with the 'totals' array 
+           
+       */
+
+
+    //    const calcTip = function (bill) {
+    //         return bill >= 50 &&  bill <= 300 ? bill * 0.15 : bill * 0.2;
+    //     }
+
+    //     const bills = [22, 295 , 176, 440, 37, 105, 10, 1100, 86, 52];
+    //     const tips= [];
+    //     const totals = [];
+
+    //     for( let i = 0; i < bills.length; i++){
+    //         const tip = calcTip(bills[i]);
+    //         tips.push(tip);
+    //         totals.push(tip + bills[i])
+    //     }
+    //     console.log('Bill',bills)
+    //     console.log('tips',tips)
+    //     console.log('total',totals)
+
+    //     // BONUS: 4:
+
+    //     const calcAverage = function (arr) {
+    //         let sum = 0;
+    //         for (let i = 0; i < arr.length; i++){
+    //             // sum = sum + arr[i];
+    //             sum += arr[i];
+    //         }
+    //         console.log(sum);
+    //         return sum / arr.length;
+    //     }
+
+    //     // calcAverage([2, 3, 6]) // inside function without returun  4.1
+    //     // console.log(calcAverage([2, 3, 7])) /// Average 4.2
+    //     console.log(calcAverage(totals)) /// Average 4.3
+
+    ////////////////// VideoNo52: Section Summary pdf   /////////////////////////////
+    ////////////////// VideoNo53: Pathways and Section Roadmap   /////////////////////////////
+    ////////////////// VideoNo54: Course Pathways pdf   /////////////////////////////
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
