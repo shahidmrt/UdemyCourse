@@ -217,7 +217,7 @@ many more...
 Objects are mutable (can be changed) and are stored in the heap.
 */
 
-//video 104 : OBJECT References In Practice 
+//video 104 : OBJECT References In Practice (Shallow vs Deep Copy)
 
 // const jessica11 ={
 //   firstName :'jessica',
