@@ -1224,7 +1224,7 @@ and the number of goals as the value. In this game, it will look like this:
 
 // const italianFoods = new Set(['pasta', 'gnocchi', 'tomatoes','olive oil', 'garlic', 'basil']);
 // const mexicanFoods = new Set(['tortiles', 'beans', 'tomatoes','rice', 'avocado', 'garlic']);
-// /////////INTERSECTION
+// /////////-------------INTERSECTION-------------
 // const Commonfoods = italianFoods.intersection(mexicanFoods); // common values
 // console.log(Commonfoods);
 // console.log([...Commonfoods])/// convert to Array
@@ -1650,10 +1650,18 @@ it's in the first half or second half (after 45 min) of the game, lLIke this:
 
 
 
-  
+let a = 10;
+let b = a ;
+b = 20;
+console.log(a, b)
 
+let obj1 = { name: "Fahad" };
+let obj2 = obj1;    // copy by reference
 
+obj2.name = "Ali";
 
+console.log(obj1.name); // "Ali"
+console.log(obj2.name); // "Ali"
 
 
 
